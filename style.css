@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+/* .navbar-container {
+    display: block;
+    margin: auto;
+    padding: auto;
+} */
+
+.navbar {
+    background-color: #F55F55;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    color: #EEEEEE
+}
+
+
+
+.card-container {
+    display: flex;
+    flex: 1;
+    column-gap: 3.3rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+    margin-block-end: 2rem;
+    border-bottom-right-radius: 15px; 
+    border-bottom-left-radius: 15px;
+    box-shadow: 3px 3px 2px 1px #eeeeee,
+    -3px -3px 2px 1px #eeeeee;
+}
+
+ .tour-img, .textuals {
+    max-width: 17rem;
+    height: 20rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    border-radius: 0.9rem;
+    box-shadow: 3px 3px 2px 1px #eeeeee,
+    -3px -3px 2px 1px #eeeeee;
+    padding: 3%;
+    text-overflow: hidden;
+}
+
+.textuals {
+   height: fit-content;
+   width: fit-content;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   word-wrap: break-word;
+   display: block;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    column-gap: .2rem;
+}
+
+.fa-location-dot {
+    color: #F55F55;
+}
+
+.country {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.location-link {
+    padding-inline-start: .6rem;
+    font-size: .7rem;
+    color: #444555;
+    opacity: 0.7
+    
+}
+
+.title {
+    color: #2B283A;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-block-start: 0.5rem;
+}
+
+.season {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 12px;
+    opacity: 0.7;
+    color: #2B283A;
+}
+
+.description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.50;
+
+    color: #2B283A;
+}  
+
+@media screen and (max-width: 700px) {
+    .card-container {
+        flex-direction: column;
+        padding-left: 0;
+    } 
+       
+    .tour-img, .textuals {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    }
+    
+}
+
+@media screen and (min-width:701px) and (max-width: 991px) {
+     .card-container {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        margin: auto 0.5rem;
+        padding: 3%;
+    }
+    
+    .country {
+        font-size:1.2rem;
+    }
+    
+     .title {
+        font-size: 2.0rem;
+        margin-block-end: 1.2rem;
+        margin-block-start: 0.6rem;
+    }
+    
+     .location-link {
+        font-size: 0.8rem;
+    }
+    
+     .season, .description {
+        font-size: 1rem;
+        /* line-height: 1.75rem; */
+        margin-block-start: 0.5rem;
+    }
+ 
+    .tour-img, .textuals {
+        max-width: 300px;
+        height: 300px;
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+        border-radius: 14px;
+    } 
+    
+    .description {
+        margin-block-start: 0.4rem;
+        padding-block-end: 0.2rem;
+    }
+    .navbar {
+        
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card-container, .navbar {
+        /* padding-left: 6%;
+        padding-right: 6%; */
+        padding: 6% 4%;
+        align-items: center;
+        justify-content: center;
+        column-gap: 6.3rem;
+    }
+    
+    .country {
+        font-size:1.2rem;
+    }
+    
+     .title {
+        font-size: 2.2rem;
+        margin-block-end: 1.5rem;
+        margin-block-start: 2rem;
+    }
+    
+     .location-link {
+        font-size: 1rem;
+    }
+    
+     .season, .description {
+        font-size: 1.1rem;
+        line-height: 28px;
+        margin-block-start: 0.5rem;
+    }
+    
+    .tour-img, .textuals {
+    max-width: 20.625rem;
+    height: 23.75rem;
+    border-radius: 0.9rem;
+    font-size: 1.8rem;
+    
+    }
+
+    .textuals {
+        height: unset;
+    }
+    
+   
+    
+    .navbar {
+        justify-content: flex-start;
+        column-gap: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
